@@ -103,7 +103,6 @@ Based on the benchmarking results, the NdLinear-optimized DQN agents generally e
 *   **Lower Memory Usage:** The NdLinear agents consume less memory due to the reduced number of parameters and smaller model size.
 *   **Smaller Model Size:** The NdLinear models have a significantly smaller file size compared to the baseline models, making them more efficient for storage and deployment.
 
-(Note: Specific numerical results and performance comparisons will be added here after a more thorough analysis of the generated plots and data.)
 
 ## Benchmarking Methodology
 
