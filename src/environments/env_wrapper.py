@@ -2,8 +2,11 @@ import gymnasium as gym
 import numpy as np
 
 class GymEnvWrapper:
-    def __init__(self, env_name, max_steps=500):
-        self.env = gym.make(env_name)
+    def __init__(self, env_name, max_steps=500, render_mode=None):
+        if render_mode:
+            self.env = gym.make(env_name, render_mode=render_mode)
+        else:
+            self.env = gym.make(env_name)
         self.max_steps = max_steps
 
     def reset(self):
